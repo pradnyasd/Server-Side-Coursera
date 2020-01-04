@@ -64,6 +64,7 @@ function auth (req, res, next) {
       return next(err);
     }
   }
+}
 app.use(auth);
 
 app.use(express.static(path.join(__dirname, 'public')));
